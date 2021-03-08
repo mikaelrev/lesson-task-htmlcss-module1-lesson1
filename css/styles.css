@@ -49,3 +49,21 @@ header a {
 footer {
   text-align: center;
 }
+
+/* Home page */
+.welcome {
+  background-image: url("../images/home-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 70vh;
+  background-position-x: right;
+  background-position-y: bottom;
+}
+
+.selling-points_images {
+  border-radius: 100px;
+}
+
+.reviews_images {
+  border-radius: 50%;
+}
