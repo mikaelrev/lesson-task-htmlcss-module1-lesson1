@@ -67,3 +67,11 @@ footer {
 .reviews_images {
   border-radius: 50%;
 }
+
+/* Contact Page */
+input,
+select,
+textarea {
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+}
