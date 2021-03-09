@@ -28,6 +28,23 @@ header a {
   color: #ffffff;
 }
 
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+
+.current {
+  text-decoration: underline;
+}
+
 .cta {
   background-color: #bb0000;
   color: #fff;
