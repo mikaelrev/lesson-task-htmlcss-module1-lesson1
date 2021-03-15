@@ -10,12 +10,28 @@ body {
 h1,
 h2,
 .logo {
-  font-family: "Boots And Spurs", "Segoe UI", Tahoma, Geneva, Verdana,
-    sans-serif;
+  font-family: "Boots And Spurs", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .product-list h2 {
   font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  margin-left: 25px;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: inline-block;
 }
 
 header,
@@ -24,45 +40,32 @@ footer {
   color: #fff;
 }
 
-/* Header and Nav */
-header a {
-  color: #ffffff;
-  padding: 10px;
-}
-
-nav ul {
-  padding: 0;
-}
-
-nav li {
-  display: inline-block;
-}
-
 /* Links */
 a {
   text-decoration: none;
 }
 
-.current {
-  text-decoration: underline;
+header a {
+  color: #fff;
+  padding: 10px;
 }
 
 .cta {
   background-color: #bb0000;
-  padding: 10px 80px;
-  border-radius: 5px;
   color: #fff;
   font-size: 1em;
   text-transform: uppercase;
-}
-
-.cta-sale {
-  background-color: #127300;
+  padding: 10px 80px;
+  border-radius: 5px;
 }
 
 .cta-small {
   padding: 8px 30px;
   font-size: 0.8em;
+}
+
+.active {
+  text-decoration: underline;
 }
 
 .reviews {
@@ -71,6 +74,10 @@ a {
 
 .featured__products {
   background-color: #fbfbfb;
+}
+
+.cta-sale {
+  background-color: #127300;
 }
 
 footer {
@@ -82,9 +89,9 @@ footer {
   background-image: url("../images/home-header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 70vh;
   background-position-x: right;
   background-position-y: bottom;
+  min-height: 70vh;
   position: relative;
 }
 
@@ -95,15 +102,25 @@ footer {
   left: 100px;
 }
 
-.selling-points_images {
+.selling-points {
+  max-width: 1000px;
+  margin: 50 auto;
+  display: flex;
+}
+
+.selling-points > * {
+  flex: 1;
+}
+
+.selling-points__images {
   border-radius: 100px;
 }
 
-.reviews_images {
+.review__images {
   border-radius: 50%;
 }
 
-/* Contact Page */
+/* Contact page */
 input,
 select,
 textarea {
